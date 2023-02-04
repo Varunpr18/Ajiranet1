@@ -1,1 +1,24 @@
+import java.util.Scanner;
+
+public class hello2 {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    int computers = 0;
+    int repeaters = 0;
+    while (true) {
+      System.out.print("Enter command (add computer/add repeater): ");
+      String input = scan.nextLine();
+      if (input.startsWith("add computer")) {
+        computers++;
+        System.out.println("Computer " + computers + " added successfully.");
+      } else if (input.startsWith("add repeater")) {
+        repeaters++;
+        System.out.println("Repeater " + repeaters + " added successfully.");
+      } else {
+        System.out.println("Invalid command.");
+      }
+    }
+  }
+}
+
 
